@@ -23,7 +23,7 @@
 	</bean>
 
 	<!-- Hibernate的相关信息 -->
-	<bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
 		<!-- 注入连接池 -->
 		<property name="dataSource" ref="dataSource" />
 		<!-- 配置Hibernate的其他的属性 -->

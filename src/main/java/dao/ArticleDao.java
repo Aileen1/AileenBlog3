@@ -12,7 +12,7 @@ public class ArticleDao  extends HibernateDaoSupport {
     //获取所有的文章
     public List<Article> obtainArticle(){
         String sql = "from Article ";
-        List<Article> list = this.getHibernateTemplate().find(sql);
+        List<Article> list = getHibernateTemplate().find(sql);
         if(list!=null&&list.size()>0){
             return list;
         }
