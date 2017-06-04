@@ -5,10 +5,9 @@
         "http://struts.apache.org/dtds/struts-2.3.dtd">
 
 <struts>
-
     <package name="user" extends="struts-default" namespace="/">
         <action name="user_*" class="userAction" method="{1}">
-            <result name="registPage">/regist.jsp</result>
+            <result name="registPage">web/WEB-INF/regist.jsp</result>
             <result name="loginPage">/login.jsp</result>
             <result name="success" type="redirectAction">article_obtainArticle</result>
             <result name="quit" type="redirectAction">article_obtainArticle</result>

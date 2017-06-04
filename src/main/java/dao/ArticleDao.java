@@ -8,6 +8,8 @@ import java.util.List;
 /**
  * Created by Administrator on 2017/5/30.
  */
+
+
 public class ArticleDao  extends HibernateDaoSupport {
     //获取所有的文章
     public List<Article> obtainArticle(){
