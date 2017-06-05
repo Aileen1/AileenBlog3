@@ -1,10 +1,14 @@
 package module;
 
+import org.hibernate.annotations.Entity;
+import org.hibernate.annotations.Table;
+
 import java.io.Serializable;
 
 /**
  * Created by Administrator on 2017/5/29.
  */
+
 public class User   implements Serializable{
 
     private String id;
