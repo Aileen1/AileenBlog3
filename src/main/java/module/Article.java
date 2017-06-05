@@ -1,9 +1,11 @@
 package module;
 
+import java.io.Serializable;
+
 /**
  * Created by Administrator on 2017/5/29.
  */
-public class Article {
+public class Article  implements Serializable {
     private String id ;
     private String title;
     private String articleDate;
