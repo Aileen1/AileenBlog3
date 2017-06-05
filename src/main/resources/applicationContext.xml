@@ -32,17 +32,20 @@
 				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
 				<prop key="hibernate.show_sql">true</prop>
 				<prop key="hibernate.format_sql">true</prop>
-				<prop key="hibernate.connection.autocommit">false</prop>
+				<prop key="hibernate.connection.autocommit">true</prop>
 				<prop key="hibernate.hbm2ddl.auto">update</prop>
 			</props>
 		</property>
 		<!-- 配置hibernate映射 -->
-		<property name="mappingResources">
+		<!-- <property name="mappingResources">
 			<list>
 				<value>module/Article.hbm.xml</value>
 				<value>module/User.hbm.xml</value>
 			</list>
-		</property>
+		</property>-->
+
+		<!-- 加载映射文件 -->
+		<property name="mappingLocations" value="classpath:module/*.hbm.xml"/>
 	</bean>
 
 	<!-- 事务管理: -->
