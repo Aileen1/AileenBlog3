@@ -15,8 +15,8 @@
        namespace:定义package命名空间 该命名空间影响到url的地址，例如此命名空间为/test那么访问是的地址为http://localhost:8080/struts2/test/XX.action
     -->
     <package name="user" extends="struts-default" namespace="/">
-        <action name="user_*" class="userAction" method="{1}">
-            <result name="registPage">web/WEB-INF/regist.jsp</result>
+        <action name="user_*" class="action.UserAction" method="{1}">
+            <result name="registPage">/regist.jsp</result>
             <result name="loginPage">/login.jsp</result>
             <result name="success" type="redirectAction">article_obtainArticle</result>
             <result name="quit" type="redirectAction">article_obtainArticle</result>
